@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LiveBl4ck Website</title>
+  <title>LiveBl4ck | Home</title>
   <style>
     body {
       margin: 0;
@@ -241,31 +241,76 @@
     var favcolor = document.getElementById('favcolor').value.toLowerCase(); // Convert to lowercase
     var body = document.getElementById('body').value.toLowerCase(); // Convert to lowercase
     var song = document.getElementById('song').value.toLowerCase(); // Convert to lowercase
-
+      
+    console.log(nickname)
+ 
     // Check each field individually
-    var status
-    if (!name) {
-      alert('Please enter your full name.');
-      return;
-    } else if (name !== "igihozo raissa") { 
-      window.location.href = 'path/to/your/download/file.zip';
-      return;
-    } else {
-      status = True
-      return;
-    }
+// ---------------------------------------------
+  if (!name || name !== "igihozo raissa") {
+    alert('Please enter your full name correctly.');
+    return;
+  }
 
-    if (!email) {
-      alert('Please enter your email.');
-      return
-    } else {
-      status = True
-      return;
-    }
 
-    if (status == True) {
-      window.location.href = 'path/to/your/download/file.zip';
-    } 
+// ---------------------------------------------
+  if (!email) {
+    alert('Please enter your email correctly.');
+    return
+  }
+  
+// ---------------------------------------------
+if (!age || age != 20) {
+alert('Please enter your age correctly.');
+return;
+}
+
+// ---------------------------------------------
+if (!gender || gender !== "option3") {
+  alert('Please enter your gender correctly.');
+  return;
+}
+
+// ---------------------------------------------
+if (!nickname || nickname !== "option3") {
+  alert('Please enter your Nickname correctly.');
+  return;
+}
+
+// ---------------------------------------------
+if (!marital || marital !== "option2") {
+  alert('Please enter your Marital status correctly.');
+  return;
+}
+
+// ---------------------------------------------
+if (!army || army !== "option3") {
+  alert('Please enter the correct event.');
+  return;
+}
+
+// ---------------------------------------------
+if (!food ||food !== "option3") {
+  alert('Please enter the favorite food .');
+  return;
+}
+
+// ---------------------------------------------
+if (!someone ||someone !== "option2") {
+  alert('Please enter the correct person.');
+  return;
+}
+
+// ---------------------------------------------
+if (!word ||word !== "option3") {
+  alert('Please enter the correct word.');
+  return;
+}
+
+
+
+    window.location.href = 'path/to/your/download/file.zip';
+  // }
+    
   }
     </script>
 </body>
