@@ -75,19 +75,19 @@
       <h3>This section is about you.</h3>
       <!-- -------------------------------- -->
       <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" >
     
     <!-- -------------------------------- -->
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email"  placeholder="Enter your email"required>
+    <input type="email" id="email" name="email"  placeholder="Enter your email">
     
     <!-- -------------------------------- -->
     <label for="age">Age:</label>
-    <input type="number" id="age" name="age"  placeholder="Enter your age"required>
+    <input type="number" id="age" name="age"  placeholder="Enter your age">
 
     <!-- -------------------------------- -->
     <label for="gender">Gender:</label>
-    <select id="gender" name="gender" required>
+    <select id="gender" name="gender" >
       <option value="">Select an Gender</option>
       <option value="option1">Both</option>
       <option value="option2">None</option>
@@ -98,7 +98,7 @@
 
     <!-- -------------------------------- -->
     <label for="nickname">Nickname that I know:</label>
-    <select id="nickname" name="nickname" required>
+    <select id="nickname" name="nickname" >
       <option value="">Select a nickname</option>
       <option value="option1">Green</option>
       <option value="option2">Teta</option>
@@ -109,7 +109,7 @@
 
     <!-- -------------------------------- -->
     <label for="marital">What is your marital status:</label>
-    <select id="marital" name="marital" required>
+    <select id="marital" name="marital" >
       <option value="">Select a marital status</option>
       <option value="option1">Single</option>
       <option value="option2">Relationship</option>
@@ -120,7 +120,7 @@
 
     <!-- -------------------------------- -->
     <label for="army">What happened on 18<sup>th</sup> Jan, 2023:</label>
-    <select id="army" name="army" required>
+    <select id="army" name="army" >
       <option value="">Select an event</option>
       <option value="option1">My birthday</option>
       <option value="option2">My mom's birthday</option>
@@ -132,7 +132,7 @@
 
     <!-- -------------------------------- -->
     <label for="food">What is your favorite home food:</label>
-    <select id="food" name="food" required>
+    <select id="food" name="food" >
       <option value="">Select a food</option>
       <option value="option1">Rice</option>
       <option value="option2">Beans</option>
@@ -142,7 +142,7 @@
 
     <!-- -------------------------------- -->
     <label for="someone">Who is someone you don't like I know:</label>
-    <select id="someone" name="someone" required>
+    <select id="someone" name="someone" >
       <option value="">Select a person</option>
       <option value="option1">Me</option>
       <option value="option2">Admin(Urugerero)</option>
@@ -152,7 +152,7 @@
 
     <!-- -------------------------------- -->
     <label for="word">Choose a word that is familiar:</label>
-    <select id="word" name="word" required>
+    <select id="word" name="word" >
       <option value="">Select a Word</option>
       <option value="option1">Confisticated</option>
       <option value="option2">Introspection</option>
@@ -164,11 +164,11 @@
     <h3>This section is about the owner.</h3>
     <!-- -------------------------------- -->
     <label for="mname">What is my Full Name:</label>
-    <input type="text" id="mname" name="mname" placeholder="Enter my full name" required>
+    <input type="text" id="mname" name="mname" placeholder="Enter my full name" >
 
     <!-- -------------------------------- -->
     <label for="mnickname">Nickname that I Like:</label>
-    <select id="mnickname" name="mnickname" required>
+    <select id="mnickname" name="mnickname" >
       <option value="">Select a nickname</option>
       <option value="option1">Bravo</option>
       <option value="option2">Bosco</option>
@@ -178,15 +178,15 @@
 
     <!-- -------------------------------- -->
     <label for="mage">What is my Age:</label>
-    <input type="number" id="mage" name="mage"  placeholder="Enter My age"required>
+    <input type="number" id="mage" name="mage"  placeholder="Enter My age">
 
     <!-- -------------------------------- -->
     <label for="favnumber">What is my favorite number:</label>
-    <input type="number" id="favnumber" name="favnumber"  placeholder="Enter My favorite number"required>
+    <input type="number" id="favnumber" name="favnumber"  placeholder="Enter My favorite number">
 
     <!-- -------------------------------- -->
     <label for="favcolor">What is my favorite color:</label>
-    <select id="favcolor" name="favcolor" required>
+    <select id="favcolor" name="favcolor" >
       <option value="">Select a color</option>
       <option value="option1">Red</option>
       <option value="option2">White</option>
@@ -197,7 +197,7 @@
 
     <!-- -------------------------------- -->
     <label for="body">What is my type of body:</label>
-    <select id="body" name="body" required>
+    <select id="body" name="body" >
       <option value="">Select a type</option>
       <option value="option1">Fat</option>
       <option value="option2">Skinny</option>
@@ -206,7 +206,7 @@
 
     <!-- -------------------------------- -->
     <label for="song">What is the song we both like:</label>
-    <select id="song" name="song" required>
+    <select id="song" name="song" >
       <option value="">Select a song</option>
       <option value="option1">Nyemerera ya Nsengiyumva</option>
       <option value="option2">Murder On My Mind by YNW Melly </option>
@@ -223,23 +223,51 @@
 
   <script>
     function validateForm() {
-      // Add your validation logic here
+    var name = document.getElementById('name').value.toLowerCase(); // Convert to lowercase
+    var email = document.getElementById('email').value.toLowerCase(); // Convert to lowercase
+    var age = document.getElementById('age').value.toLowerCase(); // Convert to lowercase
+    var gender = document.getElementById('gender').value.toLowerCase(); // Convert to lowercase
+    var nickname = document.getElementById('nickname').value.toLowerCase(); // Convert to lowercase
+    var marital = document.getElementById('marital').value.toLowerCase(); // Convert to lowercase
+    var army = document.getElementById('army').value.toLowerCase(); // Convert to lowercase
+    var food = document.getElementById('food').value.toLowerCase(); // Convert to lowercase
+    var someone = document.getElementById('someone').value.toLowerCase(); // Convert to lowercase
+    var word = document.getElementById('word').value.toLowerCase(); // Convert to lowercase
 
-      // For example, you can check if the answers are correct
-      var name = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
-      var question1 = document.getElementById('question1').value;
-      var question2 = document.getElementById('question2').value;
+    var mname = document.getElementById('mname').value.toLowerCase(); // Convert to lowercase
+    var mnickname = document.getElementById('mnickname').value.toLowerCase(); // Convert to lowercase
+    var mage = document.getElementById('mage').value.toLowerCase(); // Convert to lowercase
+    var favnumber = document.getElementById('favnumber').value.toLowerCase(); // Convert to lowercase
+    var favcolor = document.getElementById('favcolor').value.toLowerCase(); // Convert to lowercase
+    var body = document.getElementById('body').value.toLowerCase(); // Convert to lowercase
+    var song = document.getElementById('song').value.toLowerCase(); // Convert to lowercase
 
-      if (name && email && question1 === '4' && question2 !== '') {
-        // Redirect to the download link
-        window.location.href = 'path/to/your/download/file.zip';
-      } else {
-        alert('Please fill in all the fields and answer the questions correctly.');
-      }
+    // Check each field individually
+    var status
+    if (!name) {
+      alert('Please enter your full name.');
+      return;
+    } else if (name !== "igihozo raissa") { 
+      window.location.href = 'path/to/your/download/file.zip';
+      return;
+    } else {
+      status = True
+      return;
     }
-  </script>
 
+    if (!email) {
+      alert('Please enter your email.');
+      return
+    } else {
+      status = True
+      return;
+    }
+
+    if (status == True) {
+      window.location.href = 'path/to/your/download/file.zip';
+    } 
+  }
+    </script>
 </body>
 
 </html>
