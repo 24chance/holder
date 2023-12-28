@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input,
+    select {
+      margin-bottom: 16px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>LiveBl4ck</h2>
+    
+    <form id="downloadForm">
+        <h3>This section is about you.</h3>
+        <!-- -------------------------------- -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      
+      <!-- -------------------------------- -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"  placeholder="Enter your email"required>
+      
+      <!-- -------------------------------- -->
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age"  placeholder="Enter your age"required>
+
+      <!-- -------------------------------- -->
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select an Gender</option>
+        <option value="option1">Both</option>
+        <option value="option2">None</option>
+        <option value="option3">Male</option>
+        <option value="option3">Female</option>
+        <option value="option3">Half Male & Half Female</option>
+      </select>
+
+      <!-- -------------------------------- -->
+      <label for="nickname">Nickname that I know:</label>
+      <select id="nickname" name="nickname" required>
+        <option value="">Select a nickname</option>
+        <option value="option1">Green</option>
+        <option value="option2">Teta</option>
+        <option value="option3">Puppy</option>
+        <option value="option3">Gihayima</option>
+        <option value="option3">Bebe</option>
+      </select>
+
+      <!-- -------------------------------- -->
+      <label for="marital">What is your marital status:</label>
+      <select id="marital" name="marital" required>
+        <option value="">Select a marital status</option>
+        <option value="option1">Single</option>
+        <option value="option2">Relationship</option>
+        <option value="option3">Married</option>
+        <option value="option3">Divorced</option>
+        <option value="option3">Dead</option>
+      </select>
+
+      <!-- -------------------------------- -->
+      <label for="army">What happened on 18<sup>th</sup> Jan, 2023:</label>
+      <select id="army" name="army" required>
+        <option value="">Select an event</option>
+        <option value="option1">My birthday</option>
+        <option value="option2">My mom's birthday</option>
+        <option value="option3">Married</option>
+        <option value="option3">Went to Army stuff</option>
+        <option value="option3">Fell in love</option>
+        <option value="option3">Dead</option>
+      </select>
+
+      <!-- -------------------------------- -->
+      <label for="food">What is your favorite home food:</label>
+      <select id="food" name="food" required>
+        <option value="">Select a food</option>
+        <option value="option1">Rice</option>
+        <option value="option2">Beans</option>
+        <option value="option3">Meat</option>
+        <option value="option3">Potatoes</option>
+      </select>
+
+      <!-- -------------------------------- -->
+      <label for="someone">Who is someone you don't like I know:</label>
+      <select id="someone" name="someone" required>
+        <option value="">Select a person</option>
+        <option value="option1">Me</option>
+        <option value="option2">Admin(Urugerero)</option>
+        <option value="option3">Regis</option>
+        <option value="option3">You</option>
+      </select>
+
+      <!-- -------------------------------- -->
+      <label for="word">Choose a word that is familiar:</label>
+      <select id="word" name="word" required>
+        <option value="">Select a Word</option>
+        <option value="option1">Confisticated</option>
+        <option value="option2">Introspection</option>
+        <option value="option3">Two two two...</option>
+        <option value="option3">Invasive</option>
+        <option value="option3">Calisma</option>
+      </select> <br><br>
+
+      <h3>This section is about the owner.</h3>
+      <!-- -------------------------------- -->
+      <label for="mname">What is my Full Name:</label>
+      <input type="text" id="mname" name="mname" placeholder="Enter my full name" required>
+
+      <!-- -------------------------------- -->
+      <label for="mnickname">Nickname that I Like:</label>
+      <select id="mnickname" name="mnickname" required>
+        <option value="">Select a nickname</option>
+        <option value="option1">Bravo</option>
+        <option value="option2">Bosco</option>
+        <option value="option3">Buu...</option>
+        <option value="option3">Roxy</option>
+      </select>
+
+      <!-- -------------------------------- -->
+      <label for="mage">What is my Age:</label>
+      <input type="number" id="mage" name="mage"  placeholder="Enter My age"required>
+
+      <!-- -------------------------------- -->
+      <label for="favnumber">What is my favorite number:</label>
+      <input type="number" id="favnumber" name="favnumber"  placeholder="Enter My favorite number"required>
+
+      <!-- -------------------------------- -->
+      <label for="favcolor">What is my favorite color:</label>
+      <select id="favcolor" name="favcolor" required>
+        <option value="">Select a color</option>
+        <option value="option1">Red</option>
+        <option value="option2">White</option>
+        <option value="option3">Violet</option>
+        <option value="option3">Black</option>
+        <option value="option3">Pink</option>
+      </select>
+
+      <!-- -------------------------------- -->
+      <label for="body">What is my type of body:</label>
+      <select id="body" name="body" required>
+        <option value="">Select a type</option>
+        <option value="option1">Fat</option>
+        <option value="option2">Skinny</option>
+        <option value="option3">Fluff</option>
+      </select>
+
+      <!-- -------------------------------- -->
+      <label for="song">What is the song we both like:</label>
+      <select id="song" name="song" required>
+        <option value="">Select a song</option>
+        <option value="option1">Nyemerera ya Nsengiyumva</option>
+        <option value="option2">Murder On My Mind by YNW Melly </option>
+        <option value="option3">Tungamira by The Unveiled </option>
+      </select>
+
+
+
+      <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+    
+  </div>
+
+  <script>
+    function validateForm() {
+      // Add your validation logic here
+
+      // For example, you can check if the answers are correct
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var question1 = document.getElementById('question1').value;
+      var question2 = document.getElementById('question2').value;
+
+      if (name && email && question1 === '4' && question2 !== '') {
+        // Redirect to the download link
+        window.location.href = 'path/to/your/download/file.zip';
+      } else {
+        alert('Please fill in all the fields and answer the questions correctly.');
+      }
+    }
+  </script>
+
+</body>
+
+</html>
