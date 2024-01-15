@@ -1,4 +1,4 @@
-# this is a real simple journal
+# this is a real simple journal come on
 
 import tkinter as tk
 from tkinter import scrolledtext
